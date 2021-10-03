@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Bokhtiar Nadeem Shawon</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: black;
+            color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+
+        header {
+            background: #000000;
+            color: #ff0000;
+            padding-top: 10px;
+            min-height: 50px;
+            border-bottom: #d0ff00 3px solid;
+            margin-bottom: 50px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #ad0a0a;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 15px;
+            min-height: 40px;
+            border-top: #d0ff00 3px solid;
+        }
+
+        header #branding {
+            text-align: center;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            color: rgb(255, 255, 255);
+        }
+
+        .req:after {
+            content: " *";
+            color: red;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .body1 {
+            font-family: sans-serif;
+            display: flex;
+            height: 110vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Register-now {
+            width: 500px;
+            padding: 30px;
+            border: 5px solid green;
+            outline: none;
+            background: black;
+        }
+
+        .input-style {
+            margin-top: 15px;
+
+        }
+
+        .input-style input {
+            width: 90%;
+            padding: 5px;
+            border: 2px solid green;
+            color: rgb(255, 96, 4);
+            outline: none;
+            height: 20px;
+            margin-bottom: 15px;
+        }
+
+        .input-style lebel {
+            color: rgb(255, 255, 255);
+            margin-bottom: 4px;
+            display: block;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 1px;
+        }
+
+        .gender h3 {
+            color: rgb(255, 255, 255);
+            margin-top: 4px;
+        }
+
+
+
+        .option lebel {
+            color: white;
+            cursor: pointer;
+        }
+
+        .register-page input {
+            width: 90%;
+            margin-top: 20px;
+            padding: 10px;
+            background: red;
+            color: white;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .register-page input:hover {
+            color: white;
+            background: #ad0a0a
+        }
+        .cs h3 {
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+        .cse select{
+            margin-top:3px;
+            height:35px;
+            width:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Student Registration Form</h1>
+            </div>
+        </div>
+    </header>
+    <div class="body1">
+        <div class="Register-now">
+            <form action="#" mathod="post">
+                <div class="input-style">
+                    <label for="name" class="req">Name </label>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+                    <label for="email" class="req">Email </label>
+                    <input type="email" id="email" name="email" required >
+
+                    <label for="pass" class="req">Create a password </label>
+                    <input type="password" id="pass" name="pass" required>
+
+                    <label for="rpass" class="req">Repeat password </label>
+                    <input type="password" id="rpass" name="rpass" placeholder="Repeat Password" required>
+
+                    <label for="bday">Date of birth </label>
+                    <input type="date" id="bday" name="bday">
+
+                    <label for="image" class="req">Upload your photo</label>
+                    <input type="file" id="image" name="image" required>
+
+                    <label for="phone" class="req">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+880xx-xxxxxxxx"
+                        pattern="[+880]{4}[0-9]{4}-[0-9]{6}" required>
+                </div>
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <div class="option">
+                        <input type="radio" id="male" name="gender" value="MALE">
+                        <label for="male">MALE</label><br>
+                        <input type="radio" id="female" name="gender" value="FEMALE">
+                        <label for="female">FEMALE</label>
+                    </div>
+                </div>
+                <div class="cs">
+                    <h3>Department</h3>
+                    <div class="cse">
+                        <select id="dept" name="dept">
+                            <option value="iit">IIT</option>
+                            <option value="cse">CSE</option>
+                            <option value="others">OTHERS</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="register-page">
+                    <input type="submit" value="Submit" onclick="alert('Your registration has been completed.')">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Created by Shawon</footer>
+    </footer>
+</body>
+
+
+</html>
