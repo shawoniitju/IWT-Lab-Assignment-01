@@ -122,14 +122,16 @@
             color: white;
             background: #ad0a0a
         }
+
         .cs h3 {
             color: rgb(255, 255, 255);
             margin-top: 15px;
         }
-        .cse select{
-            margin-top:3px;
-            height:35px;
-            width:200px;
+
+        .cse select {
+            margin-top: 3px;
+            height: 35px;
+            width: 200px;
         }
     </style>
 </head>
@@ -144,13 +146,13 @@
     </header>
     <div class="body1">
         <div class="Register-now">
-            <form action="#" mathod="post">
+            <form action="./index.html" mathod="post">
                 <div class="input-style">
                     <label for="name" class="req">Name </label>
                     <input type="text" id="name" name="name" placeholder="Enter full name" required>
 
                     <label for="email" class="req">Email </label>
-                    <input type="email" id="email" name="email" required >
+                    <input type="email" id="email" name="email" required>
 
                     <label for="pass" class="req">Create a password </label>
                     <input type="password" id="pass" name="pass" required>
@@ -165,8 +167,8 @@
                     <input type="file" id="image" name="image" required>
 
                     <label for="phone" class="req">Phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+880xx-xxxxxxxx"
-                        pattern="[+880]{4}[0-9]{4}-[0-9]{6}" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+880xxxxxxxxxx" pattern="[+880]{4}[0-9]{10}"
+                        required>
                 </div>
                 <div class="gender">
                     <h3>Gender</h3>
@@ -189,16 +191,16 @@
                 </div>
 
                 <div class="register-page">
-                    <input type="submit" value="Submit" onclick="alert('Your registration has been completed.')">
+                    <input type="submit" value="Submit">
 
                 </div>
             </form>
         </div>
     </div>
-    <footer>
-        Created by Shawon</footer>
-    </footer>
-</body>
 
+</body>
+<footer>
+    Created by Shawon</footer>
+</footer>
 
 </html>
